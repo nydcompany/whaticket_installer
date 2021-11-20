@@ -31,6 +31,8 @@ sudo add-apt-repository ppa:certbot/certbot
 sudo apt install python3-certbot-nginx
 sudo nginx -t
 sudo service nginx restart
+sudo apt update
+sudo apt upgrade
 ```
 
 
