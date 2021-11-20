@@ -35,16 +35,15 @@ sudo nginx -t
 sudo service nginx restart
 cd ~
 sudo git clone https://github.com/renatoolegario/whaticket_installer.git
-sudo chmod +x ./whaticket_installer/whaticket
-cd ./whaticket-installer
-sudo ./whaticket
+sudo chmod +x whaticket_installer/whaticket
+cd whaticket-installer
+sudo whaticket
 sudo certbot --nginx 
 mkdir "IDENTIFICACAO_UNIDADE"
 cd "IDENTIFICACAO_UNIDADE"
 mkdir producao
 mkdir teste
 
-git clone https://github.com/riservato-xyz/whaticket-installer.git
 ```
 
 Now, all you gotta do is making it executable:
