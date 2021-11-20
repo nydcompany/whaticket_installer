@@ -164,8 +164,20 @@ sudo rm -rf /etc/nginx/sites-available/default
 sudo killall apache2
 sudo nginx -t
 sudo service nginx restart
-![image](https://user-images.githubusercontent.com/73908159/142741816-8a8a246e-f2b2-4809-8c9b-6f6176a51f02.png)
 
+cd~
+cd unidade/XX-UnidadeY/producao/whaticket/frontend
+sudo npm install
+sudo npm run build
+pm2 start server.js --name whaticket-frontend
+
+cd ..
+cd backend
+sudo npm install
+sudo npm run build
+npx sequelize db:migrate
+npx sequelize db:seed:all
+pm2 start dist/server.js --name whaticket-backend
 
 ```
 
