@@ -36,11 +36,10 @@ sudo service nginx restart
 cd ~
 sudo git clone https://github.com/renatoolegario/whaticket_installer.git
 sudo chmod +x ./whaticket_installer/whaticket
-cd ./whaticket_installer
-sudo ./whaticket
-sudo certbot --nginx 
 mkdir "IDENTIFICACAO_UNIDADE"
 cd "IDENTIFICACAO_UNIDADE"
+sudo ./whaticket
+sudo certbot --nginx 
 mkdir producao
 mkdir teste
 
