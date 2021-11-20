@@ -39,6 +39,10 @@ sudo chmod +x ./whaticket_installer/whaticket
 cd ./whaticket-installer
 sudo ./whaticket
 sudo certbot --nginx 
+mkdir "IDENTIFICACAO_UNIDADE"
+cd "IDENTIFICACAO_UNIDADE"
+mkdir producao
+mkdir teste
 
 git clone https://github.com/riservato-xyz/whaticket-installer.git
 ```
@@ -46,7 +50,7 @@ git clone https://github.com/riservato-xyz/whaticket-installer.git
 Now, all you gotta do is making it executable:
 
 ```bash
-sudo chmod +x ./whaticket-installer/whaticket
+sudo chmod +x whaticket_installer/whaticket
 ```
 
 ### usage
