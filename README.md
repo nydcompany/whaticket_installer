@@ -35,7 +35,7 @@ sudo nginx -t
 sudo service nginx restart
 cd ~
 sudo git clone https://github.com/renatoolegario/whaticket_installer.git
-sudo chmod +x ./whaticket-installer/whaticket
+sudo chmod +x ./whaticket_installer/whaticket
 cd ./whaticket-installer
 sudo ./whaticket
 sudo certbot --nginx 
