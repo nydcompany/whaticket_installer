@@ -247,5 +247,6 @@ npx sequelize db:seed:all
 pm2 start dist/server.js --name whaticket-backend
 
 ```
-
-
+```bash
+sudo certbot --nginx
+```
